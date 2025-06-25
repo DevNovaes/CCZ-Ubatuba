@@ -59,7 +59,7 @@ img#logoUba {
     /* height: 3600px; */
     max-width: 1200px;
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 10px;
 }
 
@@ -74,7 +74,7 @@ img#logoUba {
     position: sticky;
     top: 150px;
     margin-top: 50px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .sidemenu {
@@ -85,14 +85,14 @@ img#logoUba {
     height: 100%;
     /* margin: 5px; */
     margin-top:20px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .sidemenu > * {
     display: flex;
     flex-flow: column nowrap;
     border: none;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .apllyfilters {
@@ -110,13 +110,13 @@ legend {
     font: bold 15pt arial;
     color: oklch(68.5% 0.169 237.323);
     margin-bottom: 8px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 label {
     font: normal 13pt arial;
     color: oklch(41.4% 0.112 45.904);
     margin-left: 10px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .carddisplay {
@@ -124,7 +124,7 @@ label {
     flex-flow: row wrap;
     justify-content: space-between;
     max-width: 900px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 50px;
 }
 
@@ -276,11 +276,18 @@ label {
         margin: 10px 5px;
     }
     
+    .leftall {
+        margin-top: 0;
+        top: 100px;
+        background-color: oklch(95.4% 0.038 75.164);
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.33);
+    }
 
     .celmenu {
         display: flex;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         align-items: center;
         justify-content: center;
         font: bold 20pt arial;
@@ -288,7 +295,7 @@ label {
         border-color:  oklch(68.5% 0.169 237.323);
         background-color: transparent;
         border-radius: 5px;
-        margin-left: 15px;
+        margin-left: 0;
     }
 
     .sidemenu {
