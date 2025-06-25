@@ -1,0 +1,277 @@
+body {
+    background-color: oklch(95.4% 0.038 75.164);
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    background-color: oklch(40.8% 0.123 38.172);
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 100px;
+    border-bottom: 1px solid oklch(26.9% 0 0);    
+}
+
+img#logoUba {
+    height: 80px;
+    display: flex;
+    margin-left: 100px;
+}
+
+.boxmenu {
+    display: flex;
+    gap: 25px;
+    /* background-color: aquamarine; */
+    height: 60px;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+
+.linkmenu {
+    text-decoration: none;
+    color: oklch(95.4% 0.038 75.164);
+    font: normal 14pt arial;
+}
+
+.banner {
+    display: flex;
+    max-width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.main {
+    display: flex;
+    flex: row wrap;
+    justify-content: space-around;
+    /* background-color: blue; */
+
+    /* height: 3600px; */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+}
+.sidemenu {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 150px;
+    height: 100%;
+    width: 250px;
+    /* margin: 5px; */
+    margin-top: 50px;
+    /* border: 1px solid black; */
+
+}
+
+.celmenu {
+    display: none;
+    
+}
+
+.sidemenu > * {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: none;
+}
+
+
+legend {
+    font: bold 15pt arial;
+    color: oklch(68.5% 0.169 237.323);
+    margin-bottom: 8px;
+}
+label {
+    font: normal 13pt arial;
+    color: oklch(41.4% 0.112 45.904);
+    margin-left: 10px;
+}
+
+.carddisplay {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 900px;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+}
+
+.card {
+    display: flex;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 260px;
+    height: 450px;
+    margin-bottom: 50px;
+}
+
+.petpic {
+    display: flex;
+    width: 260px;
+    height: 260px;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    
+}
+
+
+.petstats {
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    align-items: center;
+    font: normal 13pt arial;
+    color: oklch(41.4% 0.112 45.904);
+    font-weight: 300;
+    /* background-color: aqua; */
+    width: 260px;
+    height: 130px;
+}
+
+.petstats > * {
+    margin: 0;
+    padding: 0;
+    
+    /* border: 1px solid black; */
+}
+
+.petname {
+    font: bold 17pt arial;
+    margin-top: 15px;
+    font-weight: 800;
+    margin-bottom: 13px;
+}
+
+.cardbutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* border: 1px solid black;     */
+}
+
+.buttonstyle {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: oklch(68.5% 0.169 237.323);
+    font: bold 15px arial;
+    color: oklch(98.7% 0.022 95.277);
+}
+.buttonstyle:active {
+    border: 2px solid rgba(0, 0, 0, 0.239);
+}
+
+.footer {
+    display: flex;
+    background-color: rgb(9, 89, 89);
+    height: 30px;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.footer > * {
+    display: flex;
+    font: italic 15pt Arial;
+}
+
+@media all and (max-width: 1100px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        position: static;
+    }
+
+        img#logoUba {
+        margin-left: 0;
+    }
+
+    .boxmenu {
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .boxmenu {
+        margin-top: 0;
+    }
+
+    .banner {
+        margin: 10px 5px;
+    }
+
+    .main {
+        margin: 10px 5px;
+    }
+
+    .carddisplay {
+        gap: 20px;
+        justify-content: space-evenly;
+
+    }
+
+    .sidemenu {
+        width: 200px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        background-color: aqua;
+        position: static;
+    }
+
+    img#logoUba {
+        margin-left: 0;
+    }
+
+    .boxmenu {
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+
+    .banner {
+        margin: 10px 5px;
+    }
+
+    .main {
+        margin: 10px 5px;
+    }
+
+    .celmenu {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        font: bold 20pt arial;
+        color:  oklch(68.5% 0.169 237.323);
+        border-color:  oklch(68.5% 0.169 237.323);
+        background-color: transparent;
+        border-radius: 5px;
+        margin-left: 15px;
+
+    }
+    
+    .carddisplay {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
