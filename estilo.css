@@ -253,7 +253,6 @@ label {
         align-items: center;
         height: 120px;
         /* background-color: aqua; */
-        position: relative;
     }
 
     img#logoUba {
@@ -278,10 +277,10 @@ label {
     
     .leftall {
         margin-top: 0;
-        top: 100px;
-        background-color: oklch(95.4% 0.038 75.164);
-        border-radius: 5px;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.33);
+        top: 130px;
+        /* background-color: oklch(95.4% 0.038 75.164); */
+        /* border-radius: 5px; */
+        /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.33); */
     }
 
     .celmenu {
@@ -300,10 +299,14 @@ label {
 
     .sidemenu {
         display: none;
+        background-color: transparent;
     }
 
     .sidemenu.show {
         display: flex;
+        background-color: oklch(95.4% 0.038 75.164);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.33);
+        border-radius: 5px;
     }
     
     .carddisplay {
