@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCZ Ubatuba</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="header">
+                
+        <img src="images/Logo Ubatuba.png" alt="Logo da Prefeitura de Ubatuba" id="logoUba">
+        
+        <section class="boxmenu">
+            <a href="link" class="linkmenu" id="topmenu1">Menu 1</a>
+            <a href="link" class="linkmenu" id="topmenu2">Menu 2</a>
+            <a href="link" class="linkmenu" id="topmenu3">Menu 3</a>
+            <a href="link" class="linkmenu" id="topmenu4">Menu 4</a>
+        </section> 
+        
+    </header>
+
+    <section class="banner" id="banner">
+    </section>
+        
+    <section class="main">
+        
+        <div class="leftall">
+            <div id="buttonbox">
+                <button class="celmenu" id="menu-toggle" onclick="celMenuToggle()">☰</button>
+            </div>
+            
+            <div class="sidemenu" id="sidemenu">
+                <fieldset class="animalmenu">
+                    <legend>Animal</legend>
+
+                    <label id="doglabel">
+                        <input type="checkbox" name="animal" id="cachorro" value="cachorro">
+                        Cachorro
+                    </label>
+                    <label id="catlabel">
+                        <input type="checkbox" name="animal" id="gato" value="gato">
+                        Gato
+                    </label>
+                </fieldset>
+                <fieldset class="sexmenu">
+                    <legend>Sexo</legend>
+                    <label id="femlabel">
+                        <input type="checkbox" name="sex" id="femea" value="femea">
+                        Fêmea
+                    </label>
+                    <label id="masclabel">
+                        <input type="checkbox" name="sex" id="macho" value="macho">
+                        Macho
+                    </label>
+                </fieldset>
+                <fieldset class="sizemenu">
+                    <legend>Porte</legend>
+                    <label>
+                        <input type="checkbox" name="size" id="pequeno" value="pequeno">
+                        Pequeno
+                    </label>
+                    <label>
+                        <input type="checkbox" name="size" id="medio" value="medio">
+                        Médio
+                    </label>
+                    <label>
+                        <input type="checkbox" name="size" id="grande" value="grande">
+                        Grande
+                    </label>
+                </fieldset>
+                <fieldset class="agemenu">
+                    <legend>Idade</legend>
+                    <label>
+                        <input type="checkbox" name="size" id="filhote" value="filhote">
+                        Até 1 ano
+                    </label>
+                    <label>
+                        <input type="checkbox" name="size" id="jovem" value="jovem">
+                        1 a 5 anos
+                    </label>
+                    <label>
+                        <input type="checkbox" name="size" id="adulto" value="adulto">
+                        5 a 10 anos
+                    </label>
+                    <label>
+                        <input type="checkbox" name="size" id="idoso" value="idoso">
+                        Mais de 10 anos
+                    </label>
+                </fieldset>
+                <input type="button" class="apllyfilters" value="Aplicar" onclick="apllyFilters()">
+            </div>
+        </div>    
+        <section class="carddisplay">
+            <div class="card">
+                <img src="images/cachorro.jpg" alt="Cachorro" class="petpic">
+                <div class="petstats">
+                    <p class="petname">Linguiça</p>
+                    <p class="petbreed">Vira-Lata</p>
+                    <p class="petage">3 anos de idade</p>
+                    <p class="petdate">No abrigo desde: 21\06\23</p>
+                </div>
+                <div class="cardbutton">
+                    <input type="button" value="Conheça minha história" class="buttonstyle">
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/cachorro.jpg" alt="Cachorro" class="petpic">
+                <div class="petstats">
+                    <p class="petname">Linguiça</p>
+                    <p class="petbreed">Vira-Lata</p>
+                    <p class="petage">3 anos de idade</p>
+                    <p class="petdate">No abrigo desde: 21\06\23</p>
+                </div>
+                <div class="cardbutton">
+                    <input type="button" value="Conheça minha história" class="buttonstyle">
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/cachorro.jpg" alt="Cachorro" class="petpic">
+                <div class="petstats">
+                    <p class="petname">Linguiça</p>
+                    <p class="petbreed">Vira-Lata</p>
+                    <p class="petage">3 anos de idade</p>
+                    <p class="petdate">No abrigo desde: 21\06\23</p>
+                </div>
+                <div class="cardbutton">
+                    <input type="button" value="Conheça minha história" class="buttonstyle">
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/cachorro.jpg" alt="Cachorro" class="petpic">
+                <div class="petstats">
+                    <p class="petname">Linguiça</p>
+                    <p class="petbreed">Vira-Lata</p>
+                    <p class="petage">3 anos de idade</p>
+                    <p class="petdate">No abrigo desde: 21\06\23</p>
+                </div>
+                <div class="cardbutton">
+                    <input type="button" value="Conheça minha história" class="buttonstyle">
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/cachorro.jpg" alt="Cachorro" class="petpic">
+                <div class="petstats">
+                    <p class="petname">Linguiça</p>
+                    <p class="petbreed">Vira-Lata</p>
+                    <p class="petage">3 anos de idade</p>
+                    <p class="petdate">No abrigo desde: 21\06\23</p>
+                </div>
+                <div class="cardbutton">
+                    <input type="button" value="Conheça minha história" class="buttonstyle">
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/cachorro.jpg" alt="Cachorro" class="petpic">
+                <div class="petstats">
+                    <p class="petname">Linguiça</p>
+                    <p class="petbreed">Vira-Lata</p>
+                    <p class="petage">3 anos de idade</p>
+                    <p class="petdate">No abrigo desde: 21\06\23</p>
+                </div>
+                <div class="cardbutton">
+                    <input type="button" value="Conheça minha história" class="buttonstyle">
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/cachorro.jpg" alt="Cachorro" class="petpic">
+                <div class="petstats">
+                    <p class="petname">Linguiça</p>
+                    <p class="petbreed">Vira-Lata</p>
+                    <p class="petage">3 anos de idade</p>
+                    <p class="petdate">No abrigo desde: 21\06\23</p>
+                </div>
+                <div class="cardbutton">
+                    <input type="button" value="Conheça minha história" class="buttonstyle">
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/cachorro.jpg" alt="Cachorro" class="petpic">
+                <div class="petstats">
+                    <p class="petname">Linguiça</p>
+                    <p class="petbreed">Vira-Lata</p>
+                    <p class="petage">3 anos de idade</p>
+                    <p class="petdate">No abrigo desde: 21\06\23</p>
+                </div>
+                <div class="cardbutton">
+                    <input type="button" value="Conheça minha história" class="buttonstyle">
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/cachorro.jpg" alt="Cachorro" class="petpic">
+                <div class="petstats">
+                    <p class="petname">Linguiça</p>
+                    <p class="petbreed">Vira-Lata</p>
+                    <p class="petage">3 anos de idade</p>
+                    <p class="petdate">No abrigo desde: 21\06\23</p>
+                </div>
+                <div class="cardbutton">
+                    <input type="button" value="Conheça minha história" class="buttonstyle">
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/cachorro.jpg" alt="Cachorro" class="petpic">
+                <div class="petstats">
+                    <p class="petname">Linguiça</p>
+                    <p class="petbreed">Vira-Lata</p>
+                    <p class="petage">3 anos de idade</p>
+                    <p class="petdate">No abrigo desde: 21\06\23</p>
+                </div>
+                <div class="cardbutton">
+                    <input type="button" value="Conheça minha história" class="buttonstyle">
+                </div>
+            </div>
+        </section>
+    </section>    
+    <footer class="footer">
+        <p>&copy; DevNovaes</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

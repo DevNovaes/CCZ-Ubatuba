@@ -22,10 +22,14 @@ img#logoUba {
 
 .boxmenu {
     display: flex;
+    /* background-color: oklch(42.322% 0.14952 276.998); */
     gap: 25px;
+    justify-items: right;
+    
     /* background-color: aquamarine; */
     height: 60px;
     align-items: center;
+    justify-content: right;
     margin-top: 20px;
     margin-right: 100px;
 }
@@ -48,59 +52,79 @@ img#logoUba {
 
 .main {
     display: flex;
-    flex: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
     /* background-color: blue; */
 
     /* height: 3600px; */
     max-width: 1200px;
     margin: 0 auto;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin-top: 10px;
-}
-.sidemenu {
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    top: 150px;
-    height: 100%;
-    width: 250px;
-    /* margin: 5px; */
-    margin-top: 50px;
-    /* border: 1px solid black; */
-
 }
 
 .celmenu {
     display: none;
-    
+}
+
+.leftall {
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: flex-start;
+    position: sticky;
+    top: 150px;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+.sidemenu {
+    display: flex;
+    flex-flow: column nowrap;
+    /* position: sticky;
+    top: 150px; */
+    height: 100%;
+    /* margin: 5px; */
+    margin-top:20px;
+    border: 1px solid black;
 }
 
 .sidemenu > * {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-flow: column nowrap;
     border: none;
+    border: 1px solid red;
 }
 
+.apllyfilters {
+    width:50%;
+    height: 20px;
+    border-radius: 5px;
+    border: 0;
+    background-color: oklch(68.5% 0.169 237.323);
+    font: bold 15px arial;
+    color: oklch(98.7% 0.022 95.277);
+    margin: 20px; 
+}
 
 legend {
     font: bold 15pt arial;
     color: oklch(68.5% 0.169 237.323);
     margin-bottom: 8px;
+    border: 1px solid green;
 }
 label {
     font: normal 13pt arial;
     color: oklch(41.4% 0.112 45.904);
     margin-left: 10px;
+    border: 1px solid green;
 }
 
 .carddisplay {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    width: 900px;
-    /* border: 1px solid black; */
+    max-width: 900px;
+    border: 1px solid black;
     margin-top: 50px;
 }
 
@@ -186,13 +210,12 @@ label {
     font: italic 15pt Arial;
 }
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1150px) {
     .header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 120px;
-        position: static;
     }
 
         img#logoUba {
@@ -202,10 +225,6 @@ label {
     .boxmenu {
         margin-top: 0;
         margin-right: 0;
-    }
-
-    .boxmenu {
-        margin-top: 0;
     }
 
     .banner {
@@ -222,8 +241,8 @@ label {
 
     }
 
-    .sidemenu {
-        width: 200px;
+    .leftall {
+        min-width: 200px;
     }
 }
 
@@ -233,8 +252,8 @@ label {
         justify-content: center;
         align-items: center;
         height: 120px;
-        background-color: aqua;
-        position: static;
+        /* background-color: aqua; */
+        position: relative;
     }
 
     img#logoUba {
@@ -248,12 +267,15 @@ label {
 
 
     .banner {
-        margin: 10px 5px;
+        display: none;
     }
 
     .main {
+        flex-flow: column nowrap;
+        align-content: center;
         margin: 10px 5px;
     }
+    
 
     .celmenu {
         display: flex;
@@ -267,7 +289,14 @@ label {
         background-color: transparent;
         border-radius: 5px;
         margin-left: 15px;
+    }
 
+    .sidemenu {
+        display: none;
+    }
+
+    .sidemenu.show {
+        display: flex;
     }
     
     .carddisplay {
